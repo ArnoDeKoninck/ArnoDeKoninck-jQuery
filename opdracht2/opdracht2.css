@@ -1,0 +1,43 @@
+body {
+  width: 50;
+  margin: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #555;
+}
+.container {
+  width: 40%;
+  margin: 1rem auto;
+  background-color: palegoldenrod;
+}
+li {
+  padding: 1rem;
+  margin-right: 3rem;
+  border-bottom: 1px solid darkgray;
+  list-style-type: none;
+}
+input {
+  width: 80%;
+  margin: 0 3rem 1rem 3rem;
+  margin-top: -1px;
+  padding: 1rem 0 1rem 0;
+  border: 1px solid darkgray;
+  background-color: palegoldenrod;
+  text-align: center;
+}
+ul {
+  margin: 0;
+  padding: 3rem;
+  width: 90%;
+}
+h3 {
+  text-align: center;
+}
+.item {
+  text-decoration: none;
+}
+.item:hover {
+  cursor: pointer;
+}
+.crossed {
+  text-decoration: line-through;
+}
