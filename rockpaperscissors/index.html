@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h3 id="score1" class="centerLeft scoreRow">Human score: 0</h3>
+    <h3 id="score2" class="centerRight scoreRow">Skynet score: 0</h3>
+    <div class="imgContainer centerLeft" id="leftPick">
+      <div id="imgLeft" class="rock"></div>
+    </div>
+    <p id="result">VS</p>
+    <p id="pLeft" class="centerLeft textRow">...</p>
+    <div class="imgContainer centerRight" id="rightPick">
+      <div id="imgRight" class="rock"></div>
+    </div>
+    <p id="pRight" class="centerRight textRow">...</p>
+    <p id="choiceTxt">Pick your choice</p>
+    <div class="btnContainer">
+      <button class="buttonRow" id="btnRock">Rock</button>
+      <button class="buttonRow" id="btnPaper">Paper</button>
+      <button class="buttonRow" id="btnScissors">Scissors</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write('<script src="./jQuery/jquery-3.5.0.js"><\/script>');
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>

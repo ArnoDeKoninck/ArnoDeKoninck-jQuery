@@ -1,0 +1,94 @@
+body {
+  display: grid;
+  background: rgb(53, 94, 128);
+  grid-template-columns: 5% 5% auto 5% 5% auto 5% 5%;
+  grid-template-rows: 15% auto 5% 5% 15%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  color: rgb(245, 245, 245);
+}
+
+.buttonRow {
+  flex-basis: 30%;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: cornflowerblue;
+}
+.scoreRow {
+  grid-row: 1/2;
+}
+.imgContainer {
+  display: flex;
+  grid-row: 2/3;
+  height: 500px;
+}
+#imgRight {
+  margin: auto;
+  transform: rotate(-90deg) scaleX(-1);
+  height: 175px;
+  width: 175px;
+  filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(69deg) brightness(114%)
+    contrast(101%);
+}
+#imgLeft {
+  margin: auto;
+  transform: rotate(90deg);
+  height: 175px;
+  width: 175px;
+  filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(69deg) brightness(114%)
+    contrast(101%);
+}
+.centerLeft {
+  grid-column: 2/4;
+}
+.centerRight {
+  grid-column: 6/7;
+}
+.textRow {
+  grid-row: 3/4;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+.btnContainer {
+  grid-column: 2/8;
+  grid-row: 6/7;
+  justify-content: space-evenly;
+  display: flex;
+  flex-flow: row nowrap;
+}
+button {
+  color: white;
+  font-size: x-large;
+}
+#choiceTxt {
+  grid-row: 5/6;
+  grid-column: 4/6;
+}
+.marked {
+  background-color: goldenrod;
+}
+#result {
+  font-size: xx-large;
+  margin: auto;
+  grid-row: 2/3;
+  grid-column: 4/6;
+}
+.chosen {
+  background-color: seagreen;
+}
+.rock {
+  background: url("img/rock.png") center/ contain no-repeat;
+}
+.paper {
+  background: url("img/paper.png") center/ contain no-repeat;
+}
+.scissors {
+  background: url("img/scissors.png") center/ contain no-repeat;
+}
+#imgLeft.scissors {
+  transform: rotate(0deg);
+}
+#imgRight.scissors {
+  transform: rotate(0deg) scaleX(-1);
+}
