@@ -1,0 +1,22 @@
+body {
+  width: 50%;
+  margin: auto;
+}
+#field {
+  margin: auto;
+  padding-bottom: 30%;
+  width: 100%;
+  background-color: rgb(245, 245, 245);
+  border-radius: 10px;
+  border: 1px solid lightgray;
+}
+h2,
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  color: #333;
+}
+p {
+  font-size: small;
+  text-align: right;
+}
