@@ -8,6 +8,6 @@ $("input").on("keypress", function (e) {
 $("body").on("click", ".item", function () {
   $(this).toggleClass("crossed");
 });
-$(this).on("dblclick", function () {
+$("body").on("dblclick", ".item", function () {
   $(this).detach();
 });
